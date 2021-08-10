@@ -1,0 +1,40 @@
+{
+  "name": "portal-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll --verbose --detectOpenHandles",
+    "start": "node app.js",
+    "start-windows-test": "set NODE_ENV=test&&node app.js",
+    "start-windows-dev": "set NODE_ENV=development&&node app.js"
+  },
+  "engines": {
+    "node": "14.16.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "compression": "^1.7.4",
+    "config": "^3.3.6",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "fawn": "^2.1.5",
+    "helmet": "^4.6.0",
+    "jest": "^27.0.6",
+    "joi": "^17.4.1",
+    "joi-objectid": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongodb": "^4.0.1",
+    "mongoose": "^5.13.3",
+    "winston": "^3.3.3",
+    "winston-mongodb": "^5.0.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12",
+    "supertest": "^6.1.4"
+  }
+}
